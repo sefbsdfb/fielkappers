@@ -2,11 +2,13 @@
 // @require      http://code.jquery.com/jquery-3.5.1.min.js
 // @name         Fifa By Kappers
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       Kappers
 // @match       https://www.ea.com/fifa/ultimate-team/web-app/
 // @grant        none
+// @updateURL   https://github.com/sefbsdfb/fielkappers/tree/main/downloads/Fifa_By_Kappers.user.js
+// @downloadURL https://github.com/sefbsdfb/fielkappers/tree/main/downloads/Fifa_By_Kappers.user.js
 
 // ==/UserScript==
 
@@ -17,7 +19,7 @@
 
     let PlayerDataMap = new Map();
     function hightLightPlayer(){
-        $.get( "https://raw.githubusercontent.com/sefbsdfb/1/master/wix-visual-data%20-%20wix-visual-data%20(1).csv", function( CSVdata) {
+        $.get( "https://raw.githubusercontent.com/sefbsdfb/fielkappers/main/01.%20-%20Sheet1.csv", function( CSVdata) {
             var lines=CSVdata.split("\n");
             var headers=lines[0].split(",");
 
