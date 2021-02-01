@@ -19,7 +19,7 @@
 
     let PlayerDataMap = new Map();
     function hightLightPlayer(){
-        $.get( "https://raw.githubusercontent.com/sefbsdfb/fielkappers/main/01.%20-%20Sheet1.csv", function( CSVdata) {
+        $.get( "https://raw.githubusercontent.com/sefbsdfb/fielkappers/main/Replace%20-%20Sheet1%20(2).csv", function( CSVdata) {
             var lines=CSVdata.split("\n");
             var headers=lines[0].split(",");
 
