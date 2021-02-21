@@ -105,7 +105,7 @@
 			let sitePlayerPriceAsNumber = parseInt(sitePlayerPrice);
 			if (!excelDataSheetPrice || !sitePlayerPriceAsNumber)
 			{
-				return;
+				continue;
 			}
 
 			if(sitePlayerPriceAsNumber <= parseInt(excelDataSheetPrice*1.03)){
